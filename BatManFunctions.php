@@ -148,21 +148,4 @@ function GetBatHistoryRange($sid,$start,$end){
   global $BatHistoryListPrefix;
   return redisLink()->lrange($BatHistoryListPrefix.$sid,$start,$end);
 }
-
-//now parse the request from either GET or POST.
-
-function parserequest()
-{
-  $operation=gt("operation");
-  if($operation){
-
-  }
-  else{
-  echo "no operation assigned";
-  }
-
-}
-
-
-
 ?>

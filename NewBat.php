@@ -6,14 +6,15 @@ $fid=gt('fid');
 if($fid)
 {
   $sid=NewBat($fid);
-  if($sid){
+  if($sid)
+  {
     echo $sid;
-}
-else
-{
-  $sid=GetBatSID($fid);
-  echo "existed,$sid";
-}
+  }
+  else
+  {
+    $sid=GetBatSID($fid);
+    echo "existed,$sid";
+  }
 }
 else
 {
